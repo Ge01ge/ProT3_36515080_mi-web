@@ -1,0 +1,175 @@
+/* para parecerse al tp1 necesite modificar esta variable pero no logre que la tome
+externamente asique probe ir a la carpeta css>bootstrap.css y ahi modificarl el .navbar{} 
+y modificarlo ahi pero tampoco funciono 
+:root {
+    --bs-navbar-padding-y: 0 !important;
+  }
+solucione agregando un padding-top:0; internamente del nav*/
+
+/* Ejercicio 2: Hoja de estilo externa (b) */
+body {
+    background-color: #eaf2e3;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+/* la consigna no aclara si se debe mover el style interno a "miestilo" asique lo conservo*/
+/* ejercio 3: Uso de clases (a) */
+.centrado{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}    
+
+/* Clase necesaria para quitar el color dado a la etiqueta "p" y diferenciar el 2do parrafo */
+.centrado_1{
+    /* text-align: center;    podria dejarse descomentado para tener una subclase */
+    /* font-style: normal;                                                        */
+    /* font-weight:normal;                                                        */
+    color: #000;
+}    
+
+/* (Ejercicio 4: Uso de secciones) Clase para el div contenedor segun la imagen de ejm. pareciera que tiene: Espaciado interno y Margen alrededor del div*/
+
+/*  (Ejercicio 5: Uso de etiquetas semánticas de HTML (3) comentar el estilo anterior en el archivo CSS )
+.contenedor {     
+    padding: 15px; 
+    margin: 20px; 
+} */
+
+/*(Ejercicio 5: Uso de etiquetas semánticas de HTML (3) nuevo estilo)*/
+.header {
+    background-color: #69bd45;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px; /* espaciado para la sección de 20 pixeles */
+}
+
+
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo del contenido del footer */
+    margin: 0 auto; /* Centrar el contenido del footer horizontalmente */
+    text-align: center; 
+}
+
+/* Ejercicio 6 agregar (dar estilo) al nav */
+.navColor {
+    background-color: #4caf50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navColor ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+/* Cambiar el color al pasar el mouse */
+nav ul li a:hover {
+    /*background-color: #ffffffb5;  Fondo blanco translucido */
+    color: black; /* Texto en negro */
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+img {
+    display: block; /* Para eliminar el espacio adicional que algunos navegadores agregan a las img. */
+    margin: 0 auto; /* Centrar las imágenes horizontalmente */
+    max-width: 100%; /* Asegurar que las imágenes no excedan el ancho del contenedor */
+    /* border: 3px solid #69bd45;  Contorno de 3px con un color verde (#69bd45) alrededor de la img.*/
+    /*border: 3px solid #fafbfa; */
+    /* border-radius: 10px; Borde redondeado de 10px para suavizar el contorno */
+}
+
+/* incorpore una subclase para acomodar mejor la imagen del section */
+.img_1{
+    width: 350px; 
+    height: 250px; 
+    border: 3px solid #69bd45; 
+    padding: 2px;
+}
+
+.img_2{
+  width: 180px; 
+  height: 200px; 
+  border: 3px solid #69bd45; 
+  padding: 2px;
+}
+
+/* ----------------------------- footer------------------------------------------- */
+
+  
+  footer {
+    background-color: #4caf50; /* Color de fondo del footer */
+    color: #fff;
+    padding: 20px 0; 
+    position: relative;
+}
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 8px 0;
+  }
+  
+  .footer-section h4,
+  .footer-section h2 {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color:rgb(246, 235, 222);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-size:20px ;
+  
+  }
+  
+  .footer-section ul li a:hover {
+    /*background-color: #4d6e5a;*/
+    color: black;
+    text-decoration: none; /* Aseguramos que el subrayado no aparezca */
+  }
+  
+  /* ------------------------------- /footer---------------------------------- */
